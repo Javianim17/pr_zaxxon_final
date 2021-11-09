@@ -5,6 +5,8 @@ using UnityEngine;
 public class Run : MonoBehaviour
 {
     float speed = 30f;
+    
+    float masVelocidad = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +18,7 @@ public class Run : MonoBehaviour
     {
         speed = 20f;
         transform.Translate(Vector3.left * speed * Time.deltaTime);
+        
+        speed = speed + masVelocidad;
     }
 }

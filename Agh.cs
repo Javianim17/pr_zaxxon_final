@@ -21,5 +21,9 @@ public class Agh : MonoBehaviour
 
         float desplaV = speedV * Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * Time.deltaTime * desplaV);
+        
+        float rot = Input.GetAxis("Horizontal-J2"); //He creado un eje nuevo para la rotación
+        //print(rot);
+        transform.Rotate(Vector3.back * Time.deltaTime * rot * 300f , Space.Self);
     }
 }

@@ -28,7 +28,7 @@ public class Agh : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Space))//Implemente un turbo pero finalmente no ha sido util a pesar de que funciona.
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * fuerzaTurbo);
+            transform.Translate(Vector3.forward * Time.deltaTime * fuerzaTurbo); 
         }
     }
 }

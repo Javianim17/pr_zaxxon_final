@@ -25,5 +25,10 @@ public class Agh : MonoBehaviour
         float rot = Input.GetAxis("Horizontal-J2"); //He creado un eje nuevo para la rotación
         //print(rot);
         transform.Rotate(Vector3.back * Time.deltaTime * rot * 300f , Space.Self);
+        
+        if (Input.GetKey(KeyCode.Space))//Implemente un turbo pero finalmente no ha sido util a pesar de que funciona.
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * fuerzaTurbo);
+        }
     }
 }
